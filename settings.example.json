@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /path/to/claude-code-jev-hooks/jev-gate.py --hook",
+            "timeout": 10,
+            "statusMessage": "Jev がコマンドの危険度を確認中"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /path/to/claude-code-jev-hooks/jev-stop-check.py --hook",
+            "timeout": 20,
+            "statusMessage": "Jev が完了報告の検査有無を確認中"
+          }
+        ]
+      }
+    ]
+  }
+}
