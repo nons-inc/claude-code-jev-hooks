@@ -5,7 +5,8 @@ Claude Code の Bash 実行前と Stop 時に Jev 判定を挟むフック集で
 Bash ゲートの Jev 層は既定でシャドーモードです。判定を記録するだけで、確認には回しません。
 Stop フックは既定で有効です。条件に当たると exit 2 で止め、検査を促します。
 
-<!-- QIITA_URL -->
+背景と4日間の運用結果は Qiita の記事に書いています。
+https://qiita.com/shun-nonoshita/items/940c04a16bd453827dd1
 
 ## 前提
 
